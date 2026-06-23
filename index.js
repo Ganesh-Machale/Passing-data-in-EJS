@@ -20,5 +20,5 @@ const app = express();
 
     app.get("/rolldice",(req,res)=>{
       let diceval = Math.floor(Math.random()*6)+1;
-       res.render("rolldice.ejs",{num:diceval});
+       res.render("rolldice.ejs",{ diceval });
     })
